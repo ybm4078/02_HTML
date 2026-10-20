@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #555;
+    width: 100%;
+    max-width: 1300px;
+    height: 85%;
+    border-radius: 40px;
+    align-items: stretch; /* align-items의 기본값, 자식의 크기를 무시, 부모 크기만큼 늘린다 */
+    overflow: hidden;
+}
+
+section {
+    width: 50%;
+    padding: 60px;
+}
+
+.info-section {
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.top-nav {
+    gap: 40px;
+    font-size: 15px;
+    color: #666;
+}
+
+.top-nav span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.top-nav .active,
+.top-nav span:hover {
+    color: #fff;
+}
+.product-detail {
+    gap: 30px;
+}
+
+.badge {
+    border-radius: 12px;
+    color: black;
+    background-color: #ccff00;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    align-self: flex-start;
+    padding: 2px 18px;
+}
+
+.title {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.highlight {
+    color: #ccff00;
+}
+
+.desc {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.size-selector {
+    gap: 15px;
+}
+
+.sizes{
+    gap: 12px;
+}
+
+.size-box {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.size-box:hover {
+    color : #ccff00;
+    border-color: #ccff00;
+}
+
+.size-active {
+    background-color: #ccff00;
+    color: black;
+    border-color: #ccff00;
+    font-weight: 800;
+}
+.size-active:hover {
+    color: black;
+}
+
+.action-row {
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.buy-btn {
+   border: 0;
+    border-radius: 40px;
+    padding: 20px 45px;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.buy-btn:hover {
+    background-color: #ccff00;
+    transform: translateY(-5px);
+}
+
+
+.product-header {
+    justify-content: space-between;
+}
+
+.visual-section {
+    background: #333;
+    justify-content: space-between;
+    /*border-radius: 0 40px 40px 0;*/
+    overflow: hidden;
+}
+
+.img-container {
+    width: 100%;
+    height: 50%;
+
+}
+
+.shoe-img {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-15deg) translateY(-20px) scale(1.1);
+    transition: all 0.5s;
+}
+
+.img-container:hover .shoe-img {
+    transform: rotate(-5deg) translateY(-80px) scale(1.5);
+}
+
+.features {
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+.f-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ccff00;
+}
+
+.f-key {
+    font-size: 13px;
+    color: #888;
+    text-transform: uppercase;
+}
