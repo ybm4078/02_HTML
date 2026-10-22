@@ -223,14 +223,14 @@ header {
 .c5 {
     font-size: 14px;
     border-bottom: 1px solid #bebebe;
-    padding: 20px 0 ;
+    padding: 20px 0 40px 0;
 }
 
 .c6 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 20px
+    gap: 15px
 }
 
 .b3 {
@@ -244,4 +244,37 @@ header {
     border: none;
     color: white;
     font-size: 14px;
+}
+.l1 {
+    display: flex;
+}
+.hidden-checkbox {
+    display: none;
+}
+
+.checkbox-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+
+.checkmark-icon {
+    width: 6px;
+    height: 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white ;
+    transform: rotate(45deg);
+}
+
+/* 선택자를 +로 연결한건 형제 선택자 */
+.hidden-checkbox:checked + .checkbox-box {
+    background-color: red;
+    border-color: red;
 }
